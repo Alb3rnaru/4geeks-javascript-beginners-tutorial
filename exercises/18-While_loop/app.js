@@ -5,8 +5,12 @@ function startCounting()
 	var counter = 100;
 	while(counter <= 100)
 	{
-		counter --;
+		if (counter < 0){
+			return ;
+		} else {
 		console.log(counter);
+		counter --;
+		}
 	}
 	
 	return counter;
